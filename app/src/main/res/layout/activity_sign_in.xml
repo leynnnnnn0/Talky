@@ -3,14 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_margin="20dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp">
+    android:layout_margin="20dp"
+    tools:context=".SignIn">
+
+    <ImageView
+    android:id="@+id/backArrow"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:src="@drawable/back_arrow"
+    android:contentDescription="@string/app_name"
+    android:background="@drawable/circle_radius"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_toEndOf="@id/backArrow"
+        android:textColor="@color/main_color"
+        android:fontFamily="@font/gilroy_semi_bold"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:textSize="16sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/backArrow"
         android:layout_above="@id/signUpButton"
         android:orientation="vertical">
 
@@ -23,19 +43,20 @@
             android:text="@string/talky" />
 
         <TextView
-            style="@style/LargeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/sign_in"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:text="@string/sign_up"/>
+            style="@style/LargeText"
+            android:layout_marginTop="20dp"
+            />
 
         <EditText
             android:id="@+id/emailTextField"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/text_field_border"
-            android:hint="@string/email"
+            android:hint="@string/enter_username"
             android:padding="10dp"
             android:layout_marginTop="30dp"
             android:autofillHints="emailAddress"
@@ -47,25 +68,20 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/text_field_border"
-            android:hint="@string/username"
-            android:padding="10dp"
-            android:layout_marginTop="15dp"
-            android:autofillHints="username"
-            android:textColor="@color/black_font"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/passwordTextField"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/text_field_border"
-            android:hint="@string/password"
+            android:hint="@string/enter_password"
             android:padding="10dp"
             android:layout_marginTop="15dp"
             android:autofillHints="password"
             android:textColor="@color/black_font"
             android:inputType="textPassword" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_password"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="end"
+            style="@style/ExtraSmallText"/>
     </LinearLayout>
 
     <Button
@@ -73,32 +89,33 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/button_design"
-        android:text="@string/sign_up_now"
-        android:layout_above="@id/dontHave"
+        android:text="@string/sign_in"
+        android:layout_above="@id/have"
         style="@style/ButtonText"/>
 
     <TextView
-        android:id="@+id/dontHave"
+        android:id="@+id/have"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/already_have"
+        android:text="@string/dont_have"
         style="@style/MediumBold"
         android:layout_marginTop="10dp"
-        android:layout_above="@id/goToSignIn"
+        android:layout_above="@id/goToSignUp"
         android:layout_centerHorizontal="true"
         />
 
     <TextView
-        android:id="@+id/goToSignIn"
+        android:id="@+id/goToSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/go_to_sign_in"
+        android:text="@string/go_to_sign_up"
         style="@style/MediumBold"
         android:textColor="@color/main_color"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="5dp"/>
+
 
 
 </RelativeLayout>
