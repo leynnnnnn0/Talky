@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/backArrow"
-        android:layout_above="@id/signUpButton"
+        android:layout_above="@id/signInButton"
         android:orientation="vertical">
 
         <TextView
@@ -52,7 +52,7 @@
             />
 
         <EditText
-            android:id="@+id/emailTextField"
+            android:id="@+id/usernameTextField"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/text_field_border"
@@ -64,7 +64,7 @@
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/usernameTextField"
+            android:id="@+id/passwordTextField"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/text_field_border"
@@ -85,7 +85,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/signUpButton"
+        android:id="@+id/signInButton"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/button_design"

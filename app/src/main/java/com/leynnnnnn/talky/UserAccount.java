@@ -1,6 +1,11 @@
 package com.leynnnnnn.talky;
 
-public class UserAccount {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
+public class UserAccount implements Parcelable {
     private String email;
     private String username;
     private String password;
@@ -12,6 +17,25 @@ public class UserAccount {
         this.password = password;
         profilePicture = R.drawable.empty_profile_picture;
     }
+
+    protected UserAccount(Parcel in) {
+        email = in.readString();
+        username = in.readString();
+        password = in.readString();
+        profilePicture = in.readInt();
+    }
+
+    public static final Creator<UserAccount> CREATOR = new Creator<UserAccount>() {
+        @Override
+        public UserAccount createFromParcel(Parcel in) {
+            return new UserAccount(in);
+        }
+
+        @Override
+        public UserAccount[] newArray(int size) {
+            return new UserAccount[size];
+        }
+    };
 
     public int getProfilePicture() {
         return profilePicture;
@@ -43,5 +67,18 @@ public class UserAccount {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(@NonNull Parcel dest, int flags) {
+        dest.writeString(email);
+        dest.writeString(username);
+        dest.writeString(password);
+        dest.writeInt(profilePicture);
     }
 }
