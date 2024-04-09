@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Text30">
+        <item name="android:textColor">@color/white_font</item>
+        <item name="android:fontFamily">fon</item>
+    </style>
+</resources>
