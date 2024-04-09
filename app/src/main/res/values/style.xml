@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Text30">
+    <style name="HeadingWhite">
         <item name="android:textColor">@color/white_font</item>
-        <item name="android:fontFamily">fon</item>
+        <item name="android:fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textSize">80sp</item>
+    </style>
+    <style name="Heading60">
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textSize">60sp</item>
+    </style>
+    <style name="Heading20">
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="RegularText15">
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="RegularText12">
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+        <item name="android:textSize">12sp</item>
     </style>
 </resources>
