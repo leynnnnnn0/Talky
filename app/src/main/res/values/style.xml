@@ -5,24 +5,39 @@
         <item name="android:fontFamily">@font/gilroy_semi_bold</item>
         <item name="android:textSize">80sp</item>
     </style>
-    <style name="Heading60">
+    <style name="HeadingLarge">
         <item name="android:textColor">@color/black_font</item>
         <item name="android:fontFamily">@font/gilroy_semi_bold</item>
         <item name="android:textSize">60sp</item>
     </style>
-    <style name="Heading20">
+    <style name="HeadingMedium">
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+    <style name="LargeText">
         <item name="android:textColor">@color/black_font</item>
         <item name="android:fontFamily">@font/gilroy_semi_bold</item>
         <item name="android:textSize">20sp</item>
     </style>
-    <style name="RegularText15">
-        <item name="android:textColor">@color/black_font</item>
+    <style name="SmallTextSpan">
+        <item name="android:textColor">@color/span_color</item>
         <item name="android:fontFamily">@font/gilroy_regular</item>
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">14sp</item>
     </style>
-    <style name="RegularText12">
+    <style name="ExtraSmallText">
         <item name="android:textColor">@color/black_font</item>
         <item name="android:fontFamily">@font/gilroy_regular</item>
         <item name="android:textSize">12sp</item>
+    </style>
+    <style name="MediumBold">
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="ButtonText">
+        <item name="android:textColor">@color/white_font</item>
+        <item name="android:fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textSize">18sp</item>
     </style>
 </resources>

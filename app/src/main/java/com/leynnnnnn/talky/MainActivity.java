@@ -1,5 +1,6 @@
 package com.leynnnnnn.talky;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        new Handler().postDelayed(this::finish, 2000);
+        new Handler().postDelayed(() -> startActivity(new Intent(this, SignUp.class)), 2000);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
