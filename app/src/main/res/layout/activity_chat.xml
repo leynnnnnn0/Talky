@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="10dp"
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chat">
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/back_arrow"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/circle_radius"/>
+
+    <TextView
+        android:id="@+id/chatUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        tools:ignore="RelativeOverlap"
+        android:layout_centerHorizontal="true"
+        style="@style/LargeText"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/chatProfilePicture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/empty_profile_picture"
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autofillHints="username"
+        android:hint="@string/message"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/text_field_border"
+        android:layout_toStartOf="@id/sendButton"
+        android:inputType="text" />
+
+    <ImageButton
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/send_icon"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

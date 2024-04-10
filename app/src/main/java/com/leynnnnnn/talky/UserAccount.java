@@ -18,6 +18,13 @@ public class UserAccount implements Parcelable {
         profilePicture = R.drawable.empty_profile_picture;
     }
 
+    public UserAccount(String email, String username, String password, int profilePicture) {
+        this.email = email;
+        this.username = username;
+        this.password = password;
+        this.profilePicture = profilePicture;
+    }
+
     protected UserAccount(Parcel in) {
         email = in.readString();
         username = in.readString();

@@ -16,4 +16,7 @@
     <string name="dont_have">Does\'nt have an account?</string>
     <string name="go_to_sign_up"><u>Sign up here</u></string>
     <string name="go_to_sign_in"><u>Sign in here</u></string>
+    <string name="chat">Chat</string>
+    <string name="search">Search</string>
+    <string name="message">Message</string>
 </resources>
